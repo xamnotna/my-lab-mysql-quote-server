@@ -1,6 +1,8 @@
 const express = require('express');
+const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+
 
 const indexRouter = require('./routes/index');
 const quotesRouter = require('./routes/quotes');
@@ -12,6 +14,8 @@ app.use(express.json()); // kan ta emot bodies i JSON
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+
+//console.log(process.env);
 
 //app.use(express.static('public'))
 app.use('/', indexRouter);
