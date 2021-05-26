@@ -1,0 +1,21 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "description": "my test api",
+  "main": "server.js",
+  "scripts": {
+    "test": "npx mocha --reporter spec",
+    "start": "npx nodemon server.js"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "ALA",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "mocha": "^8.4.0",
+    "request": "^2.88.2"
+  }
+}

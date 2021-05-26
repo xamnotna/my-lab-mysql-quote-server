@@ -17,20 +17,8 @@ async function getMultiple(page = 1){
   }
 }
 
-// Retrieve user with id 
-/* app.get('/quote/:id', function (req, res) {
-  let quote_id = req.params.id;
-  if (!quote_id) {
-   return res.status(400).send({ error: true, message: 'Please provide quote_id' });
-  } */
-/*   async function getID(quote_id){
-  
+// Retrieve quote with id 
 
-  const test = await db.query('SELECT * FROM quote where id=?', quote_id, function (error, results, fields) {
-   if (error) throw error;
-    return res.send({ error: false, data: results[0], message: 'quote list.' });
-  });
-}; */
 async function getID(id)
 {
   
